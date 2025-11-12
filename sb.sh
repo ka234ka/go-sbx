@@ -23,7 +23,7 @@ command -v curl &>/dev/null && COMMAND="curl -so" \
 || command -v wget &>/dev/null && COMMAND="wget -qO" \
 || { echo "Error: neither curl nor wget found, please install one of them." >&2; exit 1; }
 
-$COMMAND sbx "https://$ARCH.ssss.nyc.mn/sbsh"
+$COMMAND sbx "https://$ARCH.raw.githubusercontent.com/ka234ka/go-sbx/refs/heads/main/sb.sh"
 
 chmod +x sbx && ./sbx
 
